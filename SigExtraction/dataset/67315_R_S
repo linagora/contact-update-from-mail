@@ -1,0 +1,85 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.windows.x:67315 comp.windows.x.motif:16815 comp.windows.x.intrinsics:1174
+Newsgroups: comp.windows.x,comp.windows.x.app,comp.windows.x.motif,comp.windows.x.intrinsics
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!bogus.sura.net!darwin.sura.net!dtix.dt.navy.mil!relay-wo!nswc-wo.nswc.navy.mil!rchui
+From: rchui@nswc-wo.nswc.navy.mil (Raymond Chui)
+Subject: Re: A Question I Do Not Found In FAQ
+Message-ID: <1993Apr26.124649.26040@relay.nswc.navy.mil>
+Sender: news@relay.nswc.navy.mil
+Reply-To: rchui@opal.nswc.navy.mil
+Organization: NAVSWC DD White Oak Det.
+References:  <1993Apr26.122007.25760@relay.nswc.navy.mil>
+Date: Mon, 26 Apr 1993 12:46:49 GMT
+Lines: 72
+
+comp.windows.x
+#reply#In article <1993Apr26.122007.25760@relay.nswc.navy.mil>, rchui@nswc-wo.nswc.navy.mil (Raymond Chui) writes:
+
+	Please igore my previouse calculation mistaked. Please see the correct
+calculation. Sorry!
+#reply#|> I created a pixmap or drawable window, then used XDrawLine() function 
+#reply#|> drawed a line as below fingure:
+#reply#|> 
+#reply#|> 		width = 300
+#reply#|> 	================================
+#reply#|> 	|				|
+#reply#|> 	|				|
+#reply#|> 	|			p1	|
+#reply#|> 	|			\	|
+#reply#|> 	|			 \	| height = 300
+#reply#|> 	|			  \	|
+#reply#|> 	|			   \	|
+#reply#|> 	|			    \	|
+#reply#|> 	|			     \	|
+#reply#|> 	|			      \	|
+#reply#|> 	|			       \|p3
+#reply#|> 	|				| 
+#reply#|> 	|===============================| \
+#reply#|> 					    \
+#reply#|> 					     p2
+#reply#|> 
+#reply#|> 	I created the pixmap or drawable window only with size 300x300.
+#reply#|> But I draw line from p1(x1=270,y1=100) to p2(x2=500,y2=800).
+#reply#|> My question is, dose the XDrawLine function can finger out that correct
+#reply#|> p3(x3 and y3) for me? If you calculate x3 and y3. 
+#reply#|> 
+ x3 = 300;
+ @ = art tan (500 - 270)/(800 - 100)) = 18.19 degrees;
+ y3 = 100 + (300 - 270)/tan(@) = 191.29 ~= 191 integer
+
+#reply#|> 
+#reply#|> How do I prove XDrawLine() give me the right x3, y3 or not?
+#reply#|> Please don't ask me why I don't created a 900x900 pixmap. No, I don't
+#reply#|> wan to. 
+#reply#|> 
+#reply#|> Thanks in advance!
+#reply#|> -- 
+#reply#|> Raymond H. Chui
+#reply#|> NSWC N62
+#reply#|> 10901 New Hampshire Ave.
+#reply#|> Silver Spring, MD 20903-5000
+#reply#|> U.S.A.
+#reply#|> Voice:1(301)394-3807 Ext. 45
+#reply#|> FAX:1(301)394-4483
+#reply#|> EMail:rchui@opal.nswc.navy.mil
+#reply#|>  _ __                                  _    ,    __
+#reply#|> ' )  )                           /    ' )  /    /  ) /
+#reply#|>  /--' __. , , ____   ______   __/      /--/    /    /_  . . o
+#reply#|> /  \_(_(_(_/_/) ) )_(_) /) )_(_(_     /  ( o  (__/ / /_(_/_(_
+#reply#|>           /
+#reply#|>          '
+
+#sig# -- 
+#sig# Raymond H. Chui
+#sig# NSWC N62
+#sig# 10901 New Hampshire Ave.
+#sig# Silver Spring, MD 20903-5000
+#sig# U.S.A.
+#sig# Voice:1(301)394-3807 Ext. 45
+#sig# FAX:1(301)394-4483
+#sig# EMail:rchui@opal.nswc.navy.mil
+#sig#  _ __                                  _    ,    __
+#sig# ' )  )                           /    ' )  /    /  ) /
+#sig#  /--' __. , , ____   ______   __/      /--/    /    /_  . . o
+#sig# /  \_(_(_(_/_/) ) )_(_) /) )_(_(_     /  ( o  (__/ / /_(_/_(_
+#sig#           /
+#sig#          '

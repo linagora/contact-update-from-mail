@@ -1,0 +1,54 @@
+Newsgroups: comp.os.ms-windows.misc
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!gatech!darwin.sura.net!haven.umd.edu!uunet!drd!mike
+From: mike@drd.com (Mike.Rovak)
+Subject: Re: workaround for Citizen drivers
+Message-ID: <1993Apr26.194454.19902@drd.com>
+Keywords: printer driver Citizen PN48 GSX-140
+Organization: DRD Corporation
+References: <1993Apr26.185033.12279@drd.com>
+Date: Mon, 26 Apr 1993 19:44:54 GMT
+Lines: 43
+
+#reply#In article <1993Apr26.185033.12279@drd.com> mike@drd.com (Mike.Rovak) writes:
+#reply#>I have been experiencing several end-user problems with various commercial
+#reply#>software packages (WordPerfect 5.2/WIN, Publish It!/WIN 3.1) and printing
+#reply#>landscape mode on a Citizen PN48 (the little guy) or the Citizen GSX-140+.
+#reply#>
+#reply#>In a nutshell the problem is that I lose the first 0.625 inches of
+#reply#>information from my left margin, be it white space or TrueType font
+#reply#>output, and margins are not preserved on subsequent pages past the
+#reply#>first.
+#reply#>
+#reply#>WordPerfect had a workaround consisting of using the "Default" location
+#reply#>for the printers instead of "Tractor" or "Manual".  They have also filed
+#reply#>this as a bug and are continuing to investigate it.
+#reply#>
+#reply#>MS Write, of course, has no problem with these printer drivers, proving that
+#reply#>Microsoft knows something the rest of us don't!  Are you surprised?  I'm
+#reply#>not.
+#reply#>
+#reply#>Publish It!/WIN is still investigating this problem, and while I was consider-
+#reply#>my options (rejecting the one about buying an $800 DTP package, for *surely*
+#reply#>they wouldn't have this problem, right?) I stumbled onto a global workaround.
+#reply#>
+#reply#>WORKAROUND
+#reply#>----------
+#reply#>Go into the Windows 3.1 control panel, select printers, select your Citizen
+#reply#>printer driver, select SETUP, and select a custom size of 850 x 1132.  Like
+#reply#>magic, all of your problems will go away.
+#reply#>
+#reply#>Ask me no questions and I'll tell you no lies!
+#reply#>
+#reply#>-- Mike
+
+
+Excuse me, that's 850 x 1163.
+
+-- Mike
+
+#sig# ------------------------------------------------------------------------
+#sig# Disclaimer: My opinions do not necessarily reflect those of my employer.
+#sig# ========================================================================
+#sig# ------------------------------------------------------------------------
+#sig#      mike.rovak@drd.com     
+#sig# ========================================================================

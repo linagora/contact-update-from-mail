@@ -1,0 +1,78 @@
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!uwm.edu!linac!mp.cs.niu.edu!fnnews.fnal.gov!FNALF.FNAL.GOV!BEHNKE
+From: behnke@FNALF.FNAL.GOV (M.L. 'Broomen' Behnke)
+Newsgroups: sci.electronics
+Subject: Re: Peltier Effect Heat Pumps
+Date: 6 Apr 1993 21:04:29 GMT
+Organization: Fermi National Accelerator Lab
+Lines: 66
+Message-ID: <1psr8t$6cb@fnnews.fnal.gov>
+References: <2745@snap>
+Reply-To: behnke@FNALF.FNAL.GOV
+NNTP-Posting-Host: fnalf.fnal.gov
+
+#reply#In article <2745@snap>, paj@uk.co.gec-mrc (Paul Johnson) writes:
+#reply#>
+#reply#>I was having a look through a couple of components catalogues when I
+#reply#>came across a range of Peltier Effect heat pumps intended for cooling
+#reply#>components.  For those who have not heard of this effect, you put a
+#reply#>current through one of these devices, and it pumps heat from one side
+#reply#>to the other.  Reverse the current and you reverse the effect.  I
+#reply#>think a temperature difference can give you an EMF as well.
+#reply#>
+#reply#>Anyway, it struck me that you could make a nice cool/hot box for
+#reply#>picnics with one of these, a power regulator, a thermostat and a
+#reply#>couple of heat sinks.  The biggest device can shift 60W with an
+#reply#>efficiency of 80-90%, which ain't bad (although it would flatten my
+#reply#>car battery in about half an hour).
+#reply#>
+ So-Called Cool-Hot boxes have been advetised for several years.  I recall
+Damark advertising them in a recent catalog.  Problem with the units is they do
+a sh***y job of keeping food cold/warm.  The peliter devices used just don't
+seem to have enough punch to keep up.  If you want something hot, you need to
+heat it up before you put it in the box, and end up hours later with food thats
+only moderately warm.  Same goes for cold items.
+
+#reply#>Unfortunately the catalogue didn't list anything more than the basic
+#reply#>specs as a heat pump.  I imagine that you would get a back-EMF as the
+#reply#>temperature gradient across the device increases.  If so, presumably
+#reply#>its power decreases as the back-EMF increases, until eventually we
+#reply#>have a steady state with no current being consumed (assuming no
+#reply#>leakage).  If so, then the final temperature difference between the
+#reply#>two sides could be set by the supply voltage and nothing more
+#reply#>(although that would be a lousy way to control it).
+#reply#>
+#reply#>What I would like to know is:
+#reply#>
+#reply#>1: Are the above guesses correct?
+#reply#>
+#reply#>2: What is the open-circuit thermal resistance of a typical device?
+#reply#>   (I just want to be sure that my coolbox is not going to get warm
+#reply#>   too fast when I unplug it)
+
+ You'de probably be better off getting a good Coleman(tm) cooler and stocking
+up on "blue ice" blocks.
+
+#reply#>
+#reply#>3: How does a Peltier Effect heat pump actually work?  It looks like
+#reply#>   magic!
+#reply#>
+#reply#>4: Why don't they use these things in domestic fridges/freezers?
+#reply#>
+ Same as above.  Not enough "punch" in them to keep/get things cold/hot.
+#reply#>
+#reply#>Thanks in advance,
+#reply#>
+#reply#>Paul.
+#reply#>
+#reply#>Paul Johnson (paj@gec-mrc.co.uk).	    | Tel: +44 245 73331 ext 3245
+#reply#>--------------------------------------------+----------------------------------
+#reply#>These ideas and others like them can be had | GEC-Marconi Research is not
+#reply#>for $0.02 each from any reputable idealist. | responsible for my opinions
+#sig# Mike Behnke             | Senior Tech/Advisor | Quid est illuidin aqua??
+#sig# Fermi Nat Accel Lab     | Equipment Suuport   |
+#sig# Batavia, Il.            | Computing Div       | PISTRIX!!  PISTRIX!!
+#sig# BEHNKE@FNALF.FNAL.GOV   |                     |
+#sig# 
+#sig# My opinions are my own, not of the lab. So, if you don't like them, call
+#sig# 
+#sig# 1-800-UWH-INER

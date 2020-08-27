@@ -1,0 +1,44 @@
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!gatech!howland.reston.ans.net!zaphod.mps.ohio-state.edu!moe.ksu.ksu.edu!matt.ksu.ksu.edu!news
+From: paryavi@matt.ksu.ksu.edu (Saiid Paryavi)
+Newsgroups: comp.sys.mac.hardware
+Subject: Re: Unknown Mac board NATIONAL INSTRUMENTS NB-DMA-8
+Date: 23 Apr 1993 21:53:13 -0500
+Organization: Kansas State University
+Lines: 32
+Distribution: usa
+Message-ID: <1raa2pINNi5b@matt.ksu.ksu.edu>
+References: <C5yGDq.6MI@news.iastate.edu>
+NNTP-Posting-Host: matt.ksu.ksu.edu
+
+#reply#kmradke@iastate.edu (Kevin M Radke) writes:
+
+#reply#>I need help identifying this board that I found stuffed away in a corner.
+
+#reply#>As the title says, all that is printed on it is NATIONAL INSTRUMENTS NB-DMA-8.
+#reply#>It fits fine in my Mac IIci and snooper gives the very same name for the
+#reply#>board.  It looks like it has an HP-IB connector on the back of it and
+#reply#>another connector on the top (2 rows by 25 pins).  It also looks like
+#reply#>it has an Intel processor on it (#A82380-16 Intel '86)
+
+#reply#>On an EEPROM there is a sticker with the P/N 700584-01.
+
+#reply#>Anybody ever seen or heard of one?  Or better yet, do you know what it does?
+#reply#>We are all clueless here.  Our last option is to hook it up to our HP
+#reply#>workstations and see if any smoke comes out.
+
+#reply#>Thanks a lot!
+
+#reply#>Kevin
+#reply#>-- 
+It is a data aquisition board for the Mac II series.  It is called
+the DMA Board with GPIB Interface.  You may call NI at 800-IEEE-488
+to find out more about it.
+
+Hope this helps.
+
+Saiid Paryavi
+
+#sig# -- 
+#sig# *************************************************************************
+#sig# Saiid Paryavi 		paryavi@matt.ksu.ksu.edu 	saiid@cis.ksu.edu
+#sig# *************************************************************************

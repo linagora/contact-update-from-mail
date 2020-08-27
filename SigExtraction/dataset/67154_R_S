@@ -1,0 +1,63 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.unix.aix:24274 comp.windows.x:67154
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!noc.near.net!uunet!airgun!ep130.wg2.waii.com!ep130!dla
+From: dla@se05.wg2.waii.com (Doug Acker)
+Newsgroups: comp.unix.aix,comp.windows.x
+Subject: Re: build X11R5 with xlc 1.2.1 (Aix 3.2.3e)
+Message-ID: <DLA.93Apr21210218@se05.wg2.waii.com>
+Date: 22 Apr 93 02:02:18 GMT
+References: <DLA.93Apr20224915@se05.wg2.waii.com> <DLA.93Apr21200241@se05.wg2.waii.com>
+Organization: western geophysical exploration products
+Lines: 50
+NNTP-Posting-Host: se05.wg2.waii.com
+In-reply-to: dla@se05.wg2.waii.com's message of 22 Apr 1993 01:02:41 GMT
+
+#reply#>>>>> On 22 Apr 1993 01:02:41 GMT, dla@se05.wg2.waii.com (Doug Acker) said:
+#reply#	Doug> NNTP-Posting-Host: se05.wg2.waii.com
+
+#reply#>>>>> On 21 Apr 1993 03:49:16 GMT, dla@se05.wg2.waii.com (Doug Acker) said:
+#reply#	Doug> NNTP-Posting-Host: se05.wg2.waii.com
+#reply#	Doug> I  am  having  a  big problem trying to build MIT X11R5 with xlc 1.2.1
+#reply#	Doug> (the  one  bundled  with  AIX  3.2.3e).   Its almost the linker is not
+#reply#	Doug> working properly with shared libraries.
+	
+#reply# Doug> I've built X11R5 with no problem before .. but now its all  headaches.
+#reply#	Doug> For example, the xset client complains that libXmu doesnt have a bunch
+#reply#	Doug> of Xt routines and shr.o is missing (or  something  like  that).   The
+#reply#	Doug> build of libXmu DOES link in libXt  so I am really perplexed  what  is
+#reply#	Doug> going on.
+
+
+#reply#	Doug> ....following up on this, the specific error I get is:
+#reply# Doug> Could not load program ./xset 
+#reply# Doug> Symbol XtVaSetValues in ../.././lib/Xmu/libXmu.a is undefined
+#reply# Doug> Symbol XtName in ../.././lib/Xmu/libXmu.a is undefined
+#reply# Doug> Symbol XtWindowOfObject in ../.././lib/Xmu/libXmu.a is undefined
+#reply# Doug> Symbol XtGetConstraintResourceList in ../.././lib/Xmu/libXmu.a is undefined
+#reply# Doug> Symbol XtDisplayToApplicationContext in ../.././lib/Xmu/libXmu.a is undefined
+#reply# Doug> Symbol XtAppSetTypeConverter in ../.././lib/Xmu/libXmu.a is undefined
+
+
+
+
+
+
+
+
+#reply# Doug> Symbol XtScreenDatabase in ../.././lib/Xmu/libXmu.a is undefined
+#reply# Doug> Symbol XtResolvePathname in ../.././lib/Xmu/libXmu.a is undefined
+#reply# Doug> Symbol XtCvtStringToFont in ../.././lib/Xmu/libXmu.a is undefined
+#reply# Doug> Symbol XtCallConverter in ../.././lib/Xmu/libXmu.a is undefined
+#reply# Doug> Symbol XtDisplayStringConversionWarning in ../.././lib/Xmu/libXmu.a is undefined
+#reply# Doug> Could not load library libXmu.a[shr.o]
+#reply# Doug> Error was: Exec format error
+
+
+....  a  search  on  IBMLINK  revealed that this is similar to IX33890
+(howervre this was closed USE).
+#sig# --
+#sig# Douglas L.Acker                Western Geophysical Exploration Products
+#sig# ____    ____     ____          a division of Western Atlas International Inc.
+#sig# \   \  /   /\   /   /\         A Litton / Dresser Company
+#sig#  \   \/   /  \ /   /  \        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#sig#   \  /   / \  /   /\   \       Internet  :  acker@wg2.waii.com
+#sig#    \/___/   \/___/  \___\      Voice     :  (713) 964-6128

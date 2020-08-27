@@ -1,0 +1,61 @@
+Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!pitt.edu!uunet!mcsun!sunic!uts!nbivax.nbi.dk!spang
+From: spang@nbivax.nbi.dk (Karsten Spang)
+Newsgroups: comp.windows.x
+Subject: Re: Cannot create 24 plane window (summary)
+Message-ID: <1993Apr29.103439.1218@nbivax.nbi.dk>
+Date: 29 Apr 93 08:34:39 GMT
+References: <1993Apr28.100545.1217@nbivax.nbi.dk>
+Organization: Niels Bohr Institute and Nordita, Copenhagen
+Lines: 51
+
+#reply#In article <1993Apr28.100545.1217@nbivax.nbi.dk>, spang@nbivax.nbi.dk (Karsten Spang) writes:
+#reply#> I have a problem: I am not able to create a window with 24 bit planes.
+#reply#> ... gave BadMatch error on the CreateWindow request.
+#reply#> 
+#reply#> As far as I can tell from the manual, the only attribute which may give
+#reply#> a BadMatch, is the colormap, if it belongs to a wrong visual. But the
+#reply#> visual was correctly matched
+
+I got several answers, the most complete was from Errol Crary 
+(errolc@tv.tv.Tek.com):
+#reply#>I have just looked at the R4 server listings (.../mit/server/dix/window.c )
+#reply#>and there are several ways in which you can get a BadMatch error, even
+#reply#>though my O'Reilly book only says "BorderWidth is nonzero for InputOnly".
+#reply#>
+#reply#>1- if ((class == InputOnly) && ((bw != 0) || (depth != 0)))
+#reply#>
+#reply#>
+#reply#>2- /* Find out if the depth and visual are acceptable for this Screen */
+#reply#>
+#reply#>
+#reply#>3- if (((vmask & (CWBorderPixmap | CWBorderPixel)) == 0) &&
+#reply#>    (class != InputOnly) &&
+#reply#>    (depth != pParent->drawable.depth))
+#reply#>
+#reply#>
+#reply#>4- if (((vmask & CWColormap) == 0) &&
+#reply#>    (class != InputOnly) &&
+#reply#>    ((visual != ancwopt->visual) || (ancwopt->colormap == None)))
+#reply#>
+#reply#>
+#reply#>So, 
+#reply#>case 1 is InputOnly which is not your case;  it seems to be the
+#reply#>     O'Reilly case.
+#reply#>Case 2 should not be the case since you got the visual for the screen.
+#reply#>Case 3 looks suspicious; you are giving no CWBorder... in the attribute
+#reply#>     mask, and since the visual is not the parent depth, I would suspect you
+#reply#>     need to supply a border pixel from the new colormap you are going to use
+#reply#>     for this window.
+#reply#>Case 4 does not seem to be the problem since you do supply the CWColormap
+#reply#>     in the attributes.
+
+                             Thanks for your help
+
+                                   Karsten
+#sig# -- 
+#sig# --------------------------------------------------------------------------------
+#sig# InterNet:       krs@kampsax.dk                             Karsten Spang
+#sig# Phone:          +45 36 77 22 23                            Kampsax Data
+#sig# Fax:            +45 36 77 03 01                            P.O. Box 1142
+#sig#                                                            DK-2650 Hvidovre
+#sig#                                                            Denmark

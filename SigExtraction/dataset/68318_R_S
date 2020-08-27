@@ -1,0 +1,51 @@
+Newsgroups: comp.windows.x
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!gatech!howland.reston.ans.net!noc.near.net!uunet!pipex!uknet!pavo.csi.cam.ac.uk!nmm1
+From: nmm1@cus.cam.ac.uk (Nick Maclaren)
+Subject: Re: Blinking Cursor in Xterm???
+Message-ID: <1993May19.134442.6412@infodev.cam.ac.uk>
+Sender: news@infodev.cam.ac.uk (USENET news)
+Nntp-Posting-Host: bootes.cus.cam.ac.uk
+Organization: U of Cambridge, England
+References: <me.737715054@dude> <1993May18.130845.6859@taylor.uucp> <1tbpi9INNfp3@early-bird.think.com>
+Date: Wed, 19 May 1993 13:44:42 GMT
+Lines: 39
+
+#reply#In article <1tbpi9INNfp3@early-bird.think.com> barmar@think.com (Barry Margolin) writes:
+#reply#>In article <1993May18.130845.6859@taylor.uucp> mark@taylor.uucp (Mark A. Davis) writes:
+#reply#>>You are stuck in a distributed system feedback loop!  What if you are on an
+#reply#>>Xterminal or running xterm over the net to another machine?  That is when the
+#reply#>>load problems occur.  If you had a machine with 20 Xterminals attached and
+#reply#>>they all had blinking cursors in xterm's, this could represent a considerable
+#reply#>>ethernet bandwidth waste.
+#reply#>
+#reply#>Ethernet certainly has enough bandwidth for a few blinking cursors.  My
+#reply#>Lisp Machine blinks the cursor twice a second and updates the time in the
+#reply#>status line every second.  This uses under 1K bytes/second, or about .1% of
+#reply#>the bandwidth of Ethernet.  A hundred of them on a single ethernet might be
+#reply#>a problem, but a couple dozen should be fine.
+
+Bandwidth is unlikely to be the problem, except over a wet string network.
+One of major flaws of X is the horrendous number of transactions (and
+hence process switches) that it forces upon a host.  Actual measurements
+(hourly average) are 5 per second per logged in user, which can lead to
+20-50 or more process switches (depending on whether each event is
+filtered by the window manager as well as the applications and how
+many processes are needed for each character.)
+
+While a blinking cursor needs only the application and the networking
+process, and does not add any transactions, it will add something like
+10 process switches per second per user.  This is a significant increase
+in overhead, especially as the application may have quite a large working
+set.  If you want a rapidly blinking cursor, there could be as many
+as 50.
+
+If you want to go there, I wouldn't start from here!
+
+
+#sig# Nick Maclaren
+#sig# University of Cambridge Computer Laboratory,
+#sig# New Museums Site, Pembroke Street,
+#sig# Cambridge CB2 3QG, England.
+#sig# Email:  nmm1@cus.cam.ac.uk
+#sig# Tel.:   +44 223 334761
+#sig# Fax:    +44 223 334679

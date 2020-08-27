@@ -1,0 +1,36 @@
+Xref: cantaloupe.srv.cs.cmu.edu sci.crypt:16059 alt.security:10162
+Newsgroups: sci.crypt,alt.security
+Path: cantaloupe.srv.cs.cmu.edu!magnesium.club.cc.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!howland.reston.ans.net!noc.near.net!lynx!random.ccs.northeastern.edu!rogue
+From: rogue@ccs.northeastern.edu (Free Radical)
+Subject: Re: Tempest
+Message-ID: <1993Apr27.071549.22910@random.ccs.northeastern.edu>
+Sender: news@random.ccs.northeastern.edu
+Nntp-Posting-Host: damon.ccs.northeastern.edu
+Organization: College of CS, Northeastern U
+References: <1993Apr24.233742.26839@lehman.com> <1993Apr26.104320.10398@infodev.cam.ac.uk> <1993Apr26.193801.12416@lynx.dac.northeastern.edu>
+Distribution: na
+Date: Tue, 27 Apr 1993 07:15:49 GMT
+Lines: 22
+
+#reply#In article <1993Apr26.193801.12416@lynx.dac.northeastern.edu>
+#reply#angel@Foghorn_Leghorn.coe.northeastern.edu (Kirill Shklovsky) writes: 
+[...]
+#reply#>I heard somewhere (can't name the source) that TEMPEST does not necessarily
+#reply#>pick-up just CRTs, but it can pick up emissions from almost any chip.  If
+#reply#>that is true, the kind monitor would not make any difference becuase everything
+#reply#>on the screen can be picked-up from the video controller.  Can anybody verify
+#reply#>or refute this?
+
+As anyone who attended HoHoCon will attest, you can pick information
+off the video chip.  It's surprisingly easy too.  The guy did it with
+a portable TV, with very minor mods.  It only worked from 3 feet, but
+then it was just a demonstration.
+
+	RA
+
+rogue@cs.neu.edu (Rogue Agent/SoD!)
+#sig# -----------------------------------
+#sig# The NSA is now funding research not only in cryptography, but in all areas
+#sig# of advanced mathematics. If you'd like a circular describing these new
+#sig# research opportunities, just pick up your phone, call your mother, and
+#sig# ask for one.
